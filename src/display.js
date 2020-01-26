@@ -100,8 +100,8 @@ class Display extends Component {
           drumKeys.map((key, ix) => {
             const keyName = `${key.keyCode}-drum-pad`
             return (
-              <div key={keyName + ix} id={keyName} className='drum-pad'>
-                <button onClick={this.playSound} id={key.keyCode}>
+              <div key={keyName + ix} id={keyName}>
+                <button onClick={this.playSound} id={key.keyCode} className='drum-pad'>
                   {key.keyCode}
                   <audio src={key.audioClip} className='clip' id={key.keyCode} preload='auto' />
                 </button>
