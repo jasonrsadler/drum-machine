@@ -1,0 +1,10 @@
+.drumGrid {
+  margin-top: 250px;
+  display: flex;
+  text-align: center;
+}
+
+.drum-pad {
+  min-width: 1vw;
+  padding: 25px;
+}
